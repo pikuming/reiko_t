@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+.inner {
+    padding: 0 30px;
+}
+
+.en_title {
+    font-size: 4.5rem;
+}
+
+.bg_top_bottom {
+    position: relative;
+}
+
+.top {
+    padding: 100px 0 70px;
+}
+
+.top h1 {
+    font-size: 4.7rem;
+}
+
+.top-box {
+    text-align: center;
+    width: 100%;
+}
+
+.top-box p {
+    left: 110px;
+    top: 60px;
+}
+
+/* Header */
+header .pc-header {
+    display: none;
+}
+
+.navigation {
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+nav {
+    margin: 0 0 0 auto;
+    width: 150px;
+    padding: 10px;
+}
+  
+#g_menu {
+    height: 100%;
+    width: 150px;
+    padding: 20px;
+    background: rgba(0, 0, 0,.6);
+    transition: right 1s;
+    position: fixed;
+    top: 0;
+}
+  
+#g_menu:not(:target) {
+    right: -100%;
+}
+
+#g_menu:target {
+    right: 0;
+}
+
+.btn {
+    text-align: right;
+}
+  
+.btn a {
+    display: inline-block;
+    text-align: center;
+}
+  
+#open a {
+    color: white;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    transition: 1s;
+}
+  
+#close a {
+    color: #fff;
+    background: #aaa;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+}
+
+#g_menu li {
+    list-style: none;
+}
+
+#g_menu li:not(:last-child) {
+    padding-bottom: 20px;
+}
+  
+#g_menu a {
+    color: #fff;
+}
+
+/* Skills */
+.skills .skills_all {
+    flex-direction: column;
+}
+
+.skills .skill_item {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Works */
+.works .work-box {
+    width: 100%;
+}
+
+/* Contact */
+.contact .bg_contact {
+    width: 100%;
+    padding: 20px 20px 30px;
+}
+
+/* introduce */
+.profile_box .profile_img {
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+}
+.profile_txt {
+    width: 85%;
+    margin: 0 auto;
+}
+/* Footer */
