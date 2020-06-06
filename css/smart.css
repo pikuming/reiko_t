@@ -91,6 +91,16 @@ nav {
     border-radius: 15px;
 }
 
+#g_menu {
+    height: 100%;
+    width: 150px;
+    padding: 20px;
+    background: rgba(0, 0, 0,.6);
+    transition: right 1s;
+    position: fixed;
+    top: 0;
+  }
+
 #g_menu li {
     list-style: none;
 }
