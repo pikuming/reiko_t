@@ -159,4 +159,11 @@ header .pc-header {
     width: 85%;
     margin: 0 auto;
 }
-/* Footer */
+/* about */
+.about-img {
+    width: 100%;
+}
+
+.about-text {
+    width: 100%;
+}
