@@ -207,6 +207,10 @@ header ul li a {
     overflow: hidden;
 }
 
+.works .work-box span{
+    font-size: 1.7rem;
+}
+
 .hover-mask {
     position: absolute;
     top: 0;
@@ -218,13 +222,13 @@ header ul li a {
     color: #fff;
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     padding: 30px;
 }
 
 .hover-mask:hover {
-　  opacity: 1;
-　  transition: all 0.6s ease;
+    opacity: 1;
+    transition: all 0.6s ease;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
 }
