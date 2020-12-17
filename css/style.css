@@ -102,6 +102,7 @@ header ul li a {
 
 /* Top */
 .top {
+    height: 100vh;
     position: relative;
     padding: 150px 0;
 }
