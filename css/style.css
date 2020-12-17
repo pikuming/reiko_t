@@ -260,7 +260,7 @@ header ul li a {
 }
 
 /* Contact */
-.contact {
+/* .contact {
     background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),
     url(../img/bg_contact.jpg) no-repeat center;
    background-attachment: fixed;
@@ -281,9 +281,9 @@ header ul li a {
     border-left: 50vw solid #fcfcfc;  
     border-right: 50vw solid transparent;   
     border-bottom: 60px solid transparent;  
-}
+} */
 
-.skills::before {
+/* .skills::before {
     content: '';
     position: absolute;
     display: block;
@@ -294,7 +294,7 @@ header ul li a {
     border-left: 50vw solid #fcfcfc;  
     border-right: 50vw solid transparent;   
     border-bottom: 60px solid transparent;   
-}
+} */
 
 .contact .bg_contact {
     background-color: #fff;
