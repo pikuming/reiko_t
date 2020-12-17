@@ -269,10 +269,10 @@ header ul li a {
     background-color: inherit;
     left:0;
     top: 0;
-    border-top: 60px solid #f9f5f4;  
-    border-left: 50vw solid #f9f5f4;  
-    border-right: 50vw solid transparent;   
-    border-bottom: 60px solid transparent;   
+    border-top: 60px solid #fcfcfc;
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid #fcfcfc;
+    border-bottom: 60px solid transparent;
 }
 
 .contact .bg_contact {
