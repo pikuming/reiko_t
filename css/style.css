@@ -130,27 +130,27 @@ header ul li a {
 
 /* Skills */
 .skills {
-    background: linear-gradient(rgba(252,252,252,0.5),rgba(252,252,252,0.5)),
+    /* background: linear-gradient(rgba(252,252,252,0.5),rgba(252,252,252,0.5)),
      url(../img/bg_skills.png) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover; */
     position: relative;
     padding: 150px 0 100px;
 }
 
-.skills::after {
+/* .skills::after {
     content: '';
     position: absolute;
     display: block;
     background-color: inherit;
     left:0;
     bottom: 0;
-    border-top: 60px solid transparent;  /* 透明 */ 
-    border-left: 50vw solid transparent;  /* 透明 */ 
+    border-top: 60px solid transparent;  
+    border-left: 50vw solid transparent; 
     border-right: 50vw solid #fcfcfc;   
     border-bottom: 60px solid #fcfcfc;  
-}
+} */
 
 .skills .skills_all {
     display: flex;
