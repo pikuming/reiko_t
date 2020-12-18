@@ -328,13 +328,8 @@ header ul li a {
 }
 /* Footer */
 footer {
-    position: relative;
-    background-color: #F9F5F4;
-}
-footer p {
-    line-height: 30px;
     text-align: center;
-    color: white;
+    padding: 10px 0;
 }
 
 
