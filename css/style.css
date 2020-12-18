@@ -172,7 +172,7 @@ header ul li a {
 
 /* Works */
 .works {
-    background-color: #fcfcfc;
+    /* background-color: #fcfcfc; */
     padding: 100px 0;
     position: relative;
 }
@@ -329,25 +329,14 @@ header ul li a {
 /* Footer */
 footer {
     position: relative;
+    background-color: #F9F5F4;
 }
 footer p {
     line-height: 30px;
     text-align: center;
     color: white;
 }
-footer .footer_color {
-    background-color: #c9bebe;
-}
-footer .triangle_color {
-    border-color: transparent transparent #707070 transparent;
-    border-width:  0 0 120px 120px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.twitter {
-    padding-left: 10px;
-}
+
 
 /* About */
 .about-wrapper {
