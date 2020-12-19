@@ -4,31 +4,27 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
 * {
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 ul {
     list-style-type: none;
 }
-
 body {
     font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: #707070;
     overflow-x: hidden;
-    background-color: #fcfcfc;
+    /* background-color: #fcfcfc; */
+    text-align: left;
 }
 
 .inner {
@@ -37,22 +33,18 @@ body {
     padding: 0 50px;
     margin: 0 auto;
 }
-
 .sp {
     display: none;
 }
-
 .en_name {
     font-family: 'Sacramento', cursive;
 }
-
 .en_title {
     font-family: 'Lora', serif;
-    font-size: 5.5rem;
-    letter-spacing: 4px;
-    opacity: 0.7;
+    font-size: 5rem;
+    letter-spacing: .08em;
+    opacity: 0.8;
 }
-
 .fadein {
     opacity : 0;
     transform : translate(0, 50px);
@@ -64,21 +56,34 @@ body {
 	opacity : 1;
 	transform : translate(0, 0);
 }
-
-/* .bg_top_bottom {
+header {
+    position: relative;
+    margin-bottom: 50px;
+}
+header .header_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: 100%;
-    height: 30px;
-    background-color: #707070;
+    height: 60%;
+    background-color: #FAF4F2;
 }
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 120px 120px 0 0;
-    border-color: #c9bebc transparent transparent transparent;
+header .pc_header {
+    padding: 15px 0;
 }
-
+header .pc_header ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header .pc_header ul li + li {
+    margin-left: 30px;
+}
+header .pc_header a:hover {
+    opacity: 0.7;
+}
+/*
 .navigation {
     display: none;
 } */
@@ -100,39 +105,76 @@ header ul li a {
 
 /* Top */
 .top {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     padding: 150px 0;
 }
 .top h1 {
     font-size: 9rem;
-    letter-spacing: 4px;
+    letter-spacing: .05em;
 }
-.top-box{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-}
+/* .top-box{
+} */
 .top-box p {
-    position: absolute;
-    left: 380px;
-    top: 30px;   
-    width: 120px;
-    height: 25px;
+    font-size: 18px;
+    display: inline-block;
+}
+.top-box p::after {
+    content: '';
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #D0ADA2;
+    margin-top: 35px;
 }
 
+/* About_Top */
+.about_top {
+    position: relative;
+    padding: 100px 0;
+}
+.about_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 35%;
+    height: 100%;
+    background-color: #F9F5F4;
+}
+.about_wrap {
+    display: flex;
+}
+.about_img {
+    flex: 1;
+}
+.about_img img {
+    width: 100%;
+    height: auto;
+}
+.about_txt_all {
+    margin-left: 50px;
+    flex: 1.5;
+}
+.about_name {
+    position: relative;
+    margin: 5px 0 10px;
+}
+.about_name::after {
+    content: '';
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    background-color: #D0ADA2;
+}
 /* Skills */
 .skills {
-    /* background: linear-gradient(rgba(252,252,252,0.5),rgba(252,252,252,0.5)),
-     url(../img/bg_skills.png) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover; */
     position: relative;
-    /* background: #f9f5f4; */
-    padding: 150px 0 100px;
+    background: #FFFAF8;
+    padding: 100px 0;
+    margin: 50px 0;
 }
 /* .skills::after {
     content: '';
@@ -152,7 +194,7 @@ header ul li a {
     justify-content: space-between;
     width: 100%;
     text-align: center;
-    padding: 50px 0 0;
+    /* padding: 50px 0 0; */
 }
 .skills .skill_item {
     width: 30%;
@@ -172,12 +214,11 @@ header ul li a {
 
 /* Works */
 .works {
-    /* background-color: #fcfcfc; */
     padding: 100px 0;
     position: relative;
 }
 .bg_bottom {
-    background: #f9f5f4;
+    background: #FAF4F2;
     position: absolute;
     bottom: 0px;
     left: 0;
@@ -187,17 +228,18 @@ header ul li a {
 }
 .content {
     text-align: center;
+    margin-bottom: 35px;
 }
 .content p {
     font-size: 1.2rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: .09em;
 }
 .works-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 0 0;
+    /* padding: 50px 0 0; */
 }
 .works-wrapper::after {
     content: '';
@@ -208,7 +250,7 @@ header ul li a {
 .works .work-box {
     width: 30%;
     height: auto;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     position: relative;
     overflow: hidden;
     box-shadow: 0px 3px 15px rgba(85,85,85,0.3);
@@ -256,71 +298,6 @@ header ul li a {
     height: 100%;
     object-fit: cover;
 }
-
-/* Contact */
-/* .contact {
-    background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),
-    url(../img/bg_contact.jpg) no-repeat center;
-   background-attachment: fixed;
-   background-size: cover;
-   -webkit-background-size: cover;
-    position: relative;
-    padding: 150px 0 100px;
-}
-.contact::before {
-    content: '';
-    position: absolute;
-    display: block;
-    background-color: inherit;
-    left:0;
-    top: 0;
-    border-top: 60px solid #fcfcfc;  
-    border-left: 50vw solid #fcfcfc;  
-    border-right: 50vw solid transparent;   
-    border-bottom: 60px solid transparent;  
-} */
-/* .skills::before {
-    content: '';
-    position: absolute;
-    display: block;
-    background-color: inherit;
-    left:0;
-    top: 0;
-    border-top: 60px solid #fcfcfc;
-    border-left: 50vw solid transparent;
-    border-right: 50vw solid #fcfcfc;
-    border-bottom: 60px solid transparent;
-} */
-
-.contact .bg_contact {
-    background-color: #fff;
-    padding: 20px 40px 30px;
-    width: 450px;
-    margin-left: auto;
-    box-shadow: 5px 10px 13px rgba(0,0,0,0.3);
-}
-.contact .info {
-    padding: 20px 0;
-    text-align: center;
-}
-.contact .contact_btn {
-    text-align: center;
-}
-.contact .contact_btn a,
-.introduce a {
-    color: white;
-    background-color: #808080;
-    border-radius: 20px;
-    padding: 12px 25px;
-    box-shadow: 2px 3px 4px rgba(0,0,0,0.1);
-}
-.contact .contact_btn a:hover,
-.introduce a:hover {
-    background: white;
-    color: #808080;
-    border: 1px solid #707070;
-}
-
 .name_b {
     font-size: 2.2rem;
     opacity: 0.7;
@@ -330,6 +307,9 @@ header ul li a {
 footer {
     text-align: center;
     padding: 10px 0;
+}
+footer p {
+    color: #CF7078;
 }
 
 
