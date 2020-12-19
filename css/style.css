@@ -19,7 +19,8 @@ ul {
     list-style-type: none;
 }
 body {
-    font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+    /* font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif; */
+    font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
     font-size: 1.3rem;
     color: #707070;
     overflow-x: hidden;
@@ -80,8 +81,13 @@ header .pc_header ul {
 header .pc_header ul li + li {
     margin-left: 30px;
 }
+header .pc_header a {
+    transition: ease, .6s;
+}
 header .pc_header a:hover {
-    opacity: 0.7;
+    /* opacity: 0.7; */
+    padding-bottom: 5px;
+    border-bottom: 2px solid #D0ADA2;
 }
 /*
 .navigation {
@@ -105,9 +111,8 @@ header ul li a {
 
 /* Top */
 .top {
-    /* height: 100vh; */
-    position: relative;
-    padding: 150px 0;
+    /* position: relative; */
+    padding: 150px 0 100px;
 }
 .top h1 {
     font-size: 9rem;
@@ -135,12 +140,12 @@ header ul li a {
 }
 .about_bg {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: -1;
     width: 35%;
-    height: 100%;
-    background-color: #F9F5F4;
+    height: 55%;
+    background-color: rgba(224,195,186, 0.6);
 }
 .about_wrap {
     display: flex;
@@ -156,14 +161,19 @@ header ul li a {
     margin-left: 50px;
     flex: 1.5;
 }
+.about_txt_all h2 {
+    color: #CF7078;
+    font-size: 2.5rem;
+}
 .about_name {
     position: relative;
-    margin: 5px 0 10px;
+    margin: 5px 0 15px;
+    font-size: 1.5rem;
 }
 .about_name::after {
     content: '';
     width: 70%;
-    height: 2px;
+    height: 1px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -217,7 +227,7 @@ header ul li a {
     padding: 100px 0;
     position: relative;
 }
-.bg_bottom {
+/* .bg_bottom {
     background: #FAF4F2;
     position: absolute;
     bottom: 0px;
@@ -225,7 +235,7 @@ header ul li a {
     width: 100%;
     height: 60%;
     z-index: -1;
-}
+} */
 .content {
     text-align: center;
     margin-bottom: 35px;
@@ -239,7 +249,6 @@ header ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* padding: 50px 0 0; */
 }
 .works-wrapper::after {
     content: '';
@@ -306,30 +315,18 @@ header ul li a {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding-bottom: 10px;
+    /* background: #FAF4F2; */
 }
 footer p {
     color: #CF7078;
+    letter-spacing: .05em;
 }
-
-
-/* About */
-.about-wrapper {
-    width: 75%;
-    margin: 30px auto;
-}
-.about-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 30px 0;
-}
-.about-img {
-    width: 45%;
-}
-.about-img img {
-    width: 100%;
-}
-.about-text {
-    width: 45%;
+footer p::before {
+    content: '';
+    display: block;
+    margin: 0 auto 10px;
+    width: 300px;
+    height: 1px;
+    background-color: #D0ADA2;
 }
