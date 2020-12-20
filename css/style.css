@@ -111,7 +111,7 @@ header .pc_header a:hover {
 /* .top-box{
 } */
 .top-box p {
-    font-size: 18px;
+    font-size: 20px;
     display: inline-block;
 }
 .top-box p::after {
@@ -133,7 +133,7 @@ header .pc_header a:hover {
     bottom: 0;
     left: 0;
     z-index: -1;
-    width: 35%;
+    width: 100%;
     height: 55%;
     background-color: rgba(224,195,186, 0.6);
 }
@@ -160,7 +160,7 @@ header .pc_header a:hover {
 .about_name {
     position: relative;
     margin: 5px 0 15px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .about_name::after {
     content: '';
@@ -176,7 +176,7 @@ header .pc_header a:hover {
     position: relative;
     background: #FFFAF8;
     padding: 100px 0;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 /* .skills::after {
     content: '';
@@ -233,7 +233,7 @@ header .pc_header a:hover {
     margin-bottom: 35px;
 }
 .content p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: .09em;
 }
@@ -307,18 +307,18 @@ header .pc_header a:hover {
 /* Footer */
 footer {
     text-align: center;
-    padding-bottom: 10px;
-    /* background: #FAF4F2; */
+    padding: 25px 0;
+    background: #FAF4F2;
 }
 footer p {
     color: #CF7078;
     letter-spacing: .05em;
 }
-footer p::before {
+/* footer p::before {
     content: '';
     display: block;
     margin: 0 auto 10px;
     width: 300px;
     height: 1px;
     background-color: #D0ADA2;
-}
+} */
