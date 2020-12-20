@@ -9,7 +9,7 @@ a {
     color: inherit;
 }
 p {
-    line-height: 1.5;
+    line-height: 1.6;
 }
 ul {
     list-style-type: none;
@@ -20,7 +20,6 @@ body {
     font-size: 1.3rem;
     color: #707070;
     overflow-x: hidden;
-    /* background-color: #fcfcfc; */
     text-align: left;
 }
 .inner {
@@ -39,7 +38,7 @@ body {
     /* font-family: 'Lora', serif; */
     font-family: 'Unna', serif;
     font-size: 5rem;
-    letter-spacing: .08em;
+    letter-spacing: .06em;
     opacity: 0.8;
 }
 .fadein {
@@ -56,7 +55,6 @@ body {
 /* Header */
 header {
     position: relative;
-    /* margin-bottom: 50px; */
 }
 header .header_bg {
     position: absolute;
@@ -82,15 +80,9 @@ header .pc_header a {
     transition: ease, .4s;
 }
 header .pc_header a:hover {
-    /* opacity: 0.7; */
     padding-bottom: 5px;
     border-bottom: 2px solid #D0ADA2;
 }
-/*
-.navigation {
-    display: none;
-} */
-
 
 /* Top */
 .top {
@@ -117,19 +109,18 @@ header .pc_header a:hover {
 
 /* About_Top */
 .about_top {
-    /* position: relative; */
-    padding: 100px 0;
+    padding: 90px 0 150px;
 }
 .about_top .inner {
     position: relative;
 }
 .about_bg {
     position: absolute;
-    bottom: -12%;
+    bottom: -11%;
     left: 0;
     z-index: -1;
     width: 34%;
-    height: 76%;
+    height: 74%;
     background-color: rgba(224,195,186, 0.6);
 } 
 .about_wrap {
@@ -152,9 +143,6 @@ header .pc_header a:hover {
     color: #CF7078;
     font-size: 2.7rem;
 }
-.about_txt {
-    /* line-height: 1.4; */
-}
 .about_name {
     position: relative;
     margin: 5px 0 15px;
@@ -169,37 +157,23 @@ header .pc_header a:hover {
     top: 50%;
     background-color: #D0ADA2;
 }
+
 /* Skills */
 .skills {
     position: relative;
     background: #FFFAF8;
     padding: 100px 0;
-    /* margin-top: 100px; */
 }
-/* .skills::after {
-    content: '';
-    position: absolute;
-    display: block;
-    background-color: inherit;
-    left:0;
-    bottom: 0;
-    border-top: 60px solid transparent;  
-    border-left: 50vw solid transparent; 
-    border-right: 50vw solid #fcfcfc;   
-    border-bottom: 60px solid #fcfcfc;  
-} */
 .skills .skills_all {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     text-align: center;
-    /* padding: 50px 0 0; */
 }
 .skills .skill_item {
     width: 30%;
     background-color: white;
-    /* box-shadow: 5px 6px 11px rgba(0,0,0,0.3); */
     box-shadow: 0px 3px 15px rgba(85,85,85,0.3);
 }
 .skills .skill_item .square {
@@ -217,15 +191,6 @@ header .pc_header a:hover {
     padding: 100px 0;
     position: relative;
 }
-/* .bg_bottom {
-    background: #FAF4F2;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 60%;
-    z-index: -1;
-} */
 .content {
     text-align: center;
     margin-bottom: 35px;
@@ -246,7 +211,7 @@ header .pc_header a:hover {
     width: 30%;
     height: 0;
 }
-.works .work-box {
+.works .work_box {
     width: 30%;
     height: auto;
     margin-bottom: 35px;
@@ -254,7 +219,7 @@ header .pc_header a:hover {
     overflow: hidden;
     box-shadow: 0px 3px 15px rgba(85,85,85,0.3);
 }
-.works .work-box span{
+.works .work_box span{
     font-size: 1.7rem;
 }
 .hover-mask {
@@ -292,16 +257,12 @@ header .pc_header a:hover {
 	-o-transition-delay:400ms;
 	-ms-transition-delay:400ms;
 }
-.works .work-box img {
+.works .work_box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.name_b {
-    font-size: 2.2rem;
-    opacity: 0.7;
-    font-weight: bold;
-}
+
 /* Footer */
 footer {
     text-align: center;
@@ -312,11 +273,3 @@ footer p {
     color: #CF7078;
     letter-spacing: .05em;
 }
-/* footer p::before {
-    content: '';
-    display: block;
-    margin: 0 auto 10px;
-    width: 300px;
-    height: 1px;
-    background-color: #D0ADA2;
-} */
