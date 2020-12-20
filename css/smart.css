@@ -3,38 +3,29 @@
 .inner {
     padding: 0 30px;
 }
-
 .en_title {
     font-size: 4.5rem;
 }
-
 .bg_top_bottom {
     position: relative;
 }
-
 .top {
     padding: 120px 0 100px;
 }
-
 .top h1 {
     font-size: 4.7rem;
 }
-
-.top-box {
-    text-align: center;
+.top_box {
     width: 100%;
 }
-
-.top-box p {
+.top_box p {
     left: 110px;
     top: 60px;
 }
-
 /* Header */
 header .pc-header {
     display: none;
 }
-
 
 /* navigation */
 .navigation {
@@ -43,7 +34,6 @@ header .pc-header {
     top: 5px;
     right: 0;
 }
-
 #nav-drawer {
     position: relative;
 }
@@ -52,7 +42,6 @@ header .pc-header {
 .nav-unshown {
     display:none;
 }
-
 /*アイコンのスペース*/
 #nav-open {
     display: inline-block;
@@ -60,7 +49,6 @@ header .pc-header {
     height: 22px;
     vertical-align: middle;
 }
-
 /*ハンバーガーアイコンをCSSだけで表現*/
 #nav-open span, #nav-open span:before, #nav-open span:after {
     position: absolute;
@@ -92,7 +80,6 @@ header .pc-header {
     opacity: 0;
     transition: .3s ease-in-out;
 }
-
 /*中身*/
 #nav-content {
     overflow: auto;
@@ -109,19 +96,16 @@ header .pc-header {
     -webkit-transform: translateX(-105%);
     transform: translateX(-105%);/*左に隠しておく*/
 }
-
 /*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
     display: block;/*カバーを表示*/
     opacity: .5;
 }
-
 #nav-input:checked ~ #nav-content {
     -webkit-transform: translateX(0%);
     transform: translateX(0%);/*中身を表示*/
     box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
-
 #nav-content ul li {
     padding: 20px;
     font-size: 2rem;
@@ -132,39 +116,25 @@ header .pc-header {
 .skills .skills_all {
     flex-direction: column;
 }
-
 .skills .skill_item {
     width: 100%;
     margin-bottom: 20px;
 }
-
 /* Works */
 .works .work-box {
     width: 100%;
 }
 
-/* Contact */
-.contact .bg_contact {
-    width: 100%;
-    padding: 20px 20px 30px;
+/* About_Top */
+.about_wrap {
+    flex-direction: column;
 }
-
-/* introduce */
-.profile_box .profile_img {
-    margin: 0 auto;
-    width: 150px;
-    height: auto;
+.about_bg {
+    bottom: 18%;
+    width: 52%;
+    height: 50%;
 }
-.profile_txt {
-    width: 85%;
-    margin: 0 auto;
-}
-/* about */
-.about-img {
-    width: 100%;
-}
-
-.about-text {
-    width: 100%;
-    padding-top: 20px;
+.about_txt_all {
+    margin-left: 0;
+    margin-top: 30px;
 }
