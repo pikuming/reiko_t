@@ -111,16 +111,13 @@ header .pc_header a:hover {
 .about_top {
     padding: 90px 0 150px;
 }
-.about_top .inner {
-    position: relative;
-}
 .about_bg {
     position: absolute;
-    bottom: -11%;
-    left: 0;
+    bottom: -50px;
+    left: -50px;
     z-index: -1;
-    width: 34%;
-    height: 74%;
+    width: 100%;
+    height: 100%;
     background-color: rgba(224,195,186, 0.6);
 } 
 .about_wrap {
@@ -130,6 +127,7 @@ header .pc_header a:hover {
 }
 .about_img {
     flex: 1;
+    position: relative;
 }
 .about_img img {
     width: 100%;
@@ -144,18 +142,19 @@ header .pc_header a:hover {
     font-size: 2.7rem;
 }
 .about_name {
-    position: relative;
     margin: 5px 0 15px;
     font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.about_name::after {
-    content: '';
-    width: 70%;
-    height: 1px;
-    position: absolute;
-    right: 0;
-    top: 50%;
+.about_name .about_name_line {
     background-color: #D0ADA2;
+    width: 100%;
+    height: 1px;
+    margin-left: 20px;
+    flex: 1;
+    align-items: center;
 }
 
 /* Skills */
