@@ -21,7 +21,6 @@ body {
     color: #707070;
     overflow-x: hidden;
     text-align: left;
-    line-height: 1.8;
 }
 .inner {
     width: 100%;
@@ -110,7 +109,7 @@ header .pc_header a:hover {
 
 /* About_Top */
 .about_top {
-    padding: 90px 0 150px;
+    padding: 10% 0 20%;
 }
 .about_bg {
     position: absolute;
@@ -162,7 +161,7 @@ header .pc_header a:hover {
 .skills {
     position: relative;
     background: #FFFAF8;
-    padding: 100px 0;
+    padding: 10% 0;
 }
 .skills .skills_all {
     display: flex;
@@ -188,7 +187,7 @@ header .pc_header a:hover {
 
 /* Works */
 .works {
-    padding: 100px 0;
+    padding: 10% 0;
     position: relative;
 }
 .content {
