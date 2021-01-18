@@ -30,11 +30,11 @@ header .pc_header {
 /* About_Top */
 .about_wrap {
     flex-direction: column;
+    padding: 0;
 }
 .about_bg {
-    bottom: 18%;
-    width: 52%;
-    height: 50%;
+    bottom: -20px;
+    left: -20px;
 }
 .about_txt_all {
     margin-left: 0;
